@@ -1,4 +1,5 @@
 """
+--- DEVELOPMENT SETTINGS! ---
 Django settings for klufw project.
 
 For more information on this file, see
