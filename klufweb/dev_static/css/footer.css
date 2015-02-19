@@ -1,0 +1,102 @@
+footer {
+    display: block;
+
+    padding: 32px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+    margin-bottom: 16px;
+
+    width: 80%;
+		max-width: 1000px;
+
+    color: #FFFFFF;
+    background: #303030;
+}
+
+footer div:first-child {
+    float:center;
+    overflow:hidden;
+}
+
+footer div:first-child ul {
+    list-style:none;
+    margin:0;
+    overflow:hidden;
+    padding:10px 0 0;
+}
+footer div:first-child ul li {
+    color:#CCCCCC;
+    float:left;
+    font-size:11px;
+}
+footer div:first-child ul li:first-child a {
+    padding-left:0;
+}
+footer div:first-child ul li a {
+    color:#CCCCCC;
+    font-family:"Arial Black", Gadget, sans-serif;
+    font-size:11px;
+    line-height:30px;
+    padding:0 13px;
+    text-decoration:none;
+    text-transform:uppercase;
+}
+footer div:first-child ul li a:hover, footer div:first-child ul li.selected a {
+    color:c;
+}
+footer div:first-child p {
+    color:#CCCCCC;
+    display:block;
+    font-family:"Arial Black", Gadget, sans-serif;
+    font-size:11px;
+    line-height:11px;
+    margin:-2px 0 0;
+    text-decoration:none;
+    text-transform:uppercase;
+}
+.connect {
+    float:right;
+    padding:20px 20px 0;
+}
+.connect span {
+    color:#FFAA33;
+    float:left;
+    font-family:"Arial Black", Gadget, sans-serif;
+    font-size:11px;
+    line-height:12px;
+    text-transform:uppercase;
+}
+.connect a {
+    float:left;
+    height:22px;
+    margin:0 0 0 7px;
+    text-indent:-99999px;
+    width:23px;
+}
+
+.connect a#fb {
+    background:url(../img/icons.png) no-repeat 0 -184px;
+}
+.connect a#fb:hover {
+    background:url(../img/icons.png) no-repeat 0 -207px;
+}
+.connect a#twitter {
+    background:url(../img/icons.png) no-repeat 0 -230px;
+}
+.connect a#twitter:hover {
+    background:url(../img/icons.png) no-repeat 0 -253px;
+}
+.connect a#googleplus {
+    background:url(../img/icons.png) no-repeat 0 -276px;
+}
+.connect a#googleplus:hover {
+    background:url(../img/icons.png) no-repeat 0 -299px;
+}
+.connect a#contact {
+    background:url(../img/icons.png) no-repeat 0 -322px;
+}
+.connect a#contact:hover {
+    background:url(../img/icons.png) no-repeat 0 -345px;
+}

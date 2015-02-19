@@ -1,0 +1,47 @@
+{% extends "base.html"%}
+{% load static %}
+
+{% load ext_img %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ STATIC_URL }}feed/css/news.css">
+{% endblock css %}
+
+{% block content %}
+<div class="news">
+    {% for article in articles %}
+    <div class="news_item">
+        <div class="row">
+            <div class="col-sm-4">
+                    {{ article.body|ext_img|safe }}
+            </div>
+            <div class="col-sm-8">
+                <a href = "/news/{{article.id}}/{{ article.slug }}"><h2>{{ article.headline }}</h2></a>
+                    {{ article.body|safe|striptags|truncatewords:"50" }}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+    <div class="row">
+        <div class="col-sm-4">
+            {% if page.prev_deactivated %}
+                <a href="#" class="btn btn-primary disabled">Previous</a>
+            {% else %}
+                <a href="/news/p/{{page.prev}}" class="btn btn-primary">
+                    Previous</a>
+            {% endif %}
+        </div>
+        <div class="col-sm-4">
+        </div>
+        <div class="col-sm-4" align="right">
+            {% if page.next_deactivated %}
+                <a href="#" class="btn btn-primary disabled">Next</a>
+            {% else %}
+                <a href="/news/p/{{page.next}}" class="btn btn-primary">
+                    Next
+                </a>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,31 @@
+{% load static %}
+
+{% block javascript %}
+{% endblock %}
+
+<div class="sidebar">
+    <span class="news">Nyheter</span>
+    <ul>
+        {% for news in reqcon.articles %}
+        <li><a href="/news/{{news.id}}/{{news.slug}}">{{news.headline}}</a><span>Posted on {{news.created|date:'Y-m-d H:i'}}</span></li>
+        {% endfor %}
+    </ul>
+    <a href="/news">Läs Mer</a>
+</div>
+<div class="sidebar">
+    <span class="schedule">Träningstider</span>
+    <ul>
+        {% for event in SCHEDULE %}
+            <li>
+                <a href="/schedule">
+                    {{event.weekday}} {{event.time}} 
+                    <br> 
+                    {{event.location}}
+                    <span><i>{% if event.description %} {{event.description}} {%endif%}</i></span>
+                </a>
+                <span>Updated {{event.updated|date:'Y-m-d '}}</span>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="/"><!--/schedule"-->Mer Info</a>
+</div>

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ STATIC_URL }}feed/css/news_page.css">
+{% endblock css %}
+
+{% block content %}
+<div class="news_page">
+<h1>{{ article.headline }}</h1>
+{{ article.body|safe }}
+</div>
+{% endblock %}

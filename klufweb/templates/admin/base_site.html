@@ -1,0 +1,17 @@
+{% extends "admin/base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block extrastyle %}
+    <link rel="stylesheet" href="{% static 'admin/admin.css' %}">
+{% endblock %}
+
+{% block title %}{{ title }} | {% trans 'Django site admin' %}{% endblock %}
+
+
+{% block branding %}
+<h1 id="site-name">Linköping Ultimate Admin Interface</h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
+
