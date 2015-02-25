@@ -19,8 +19,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-with open('/etc/klufwenvsecretkey.txt') as f:
-    SECRET_KEY = f.read().strip()
+# with open('/etc/klufwenvsecretkey.txt') as f:
+#    SECRET_KEY = f.read().strip()
+SECRET_KEY = 'development-secret-key-only-to-be-used-in-development!'
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -87,8 +88,6 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'klufwdb_dev',
-        'USER': 'klufw',
-        'HOST': 'localhost',
     }
 }
 
