@@ -45,6 +45,7 @@ INSTALLED_APPS = (
     'about',
     'feed',
     'home',
+    'static_page',
 )
 
 MIDDLEWARE_CLASSES = (
