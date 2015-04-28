@@ -9,10 +9,12 @@ footer {
     margin-bottom: 16px;
 
     width: 80%;
-		max-width: 1000px;
+    max-width: 1000px;
 
-    color: #FFFFFF;
-    background: #303030;
+    background: url('../img/bg_div.png') repeat;
+    -moz-box-shadow: 0 0 32px #333;
+    -webkit-box-shadow: 0 0 32px #333;
+    box-shadow: 0 0 32px #666;
 }
 
 footer div:first-child {
@@ -27,7 +29,7 @@ footer div:first-child ul {
     padding:10px 0 0;
 }
 footer div:first-child ul li {
-    color:#CCCCCC;
+    color:#46bad3;
     float:left;
     font-size:11px;
 }
@@ -35,7 +37,6 @@ footer div:first-child ul li:first-child a {
     padding-left:0;
 }
 footer div:first-child ul li a {
-    color:#CCCCCC;
     font-family:"Arial Black", Gadget, sans-serif;
     font-size:11px;
     line-height:30px;
@@ -47,7 +48,6 @@ footer div:first-child ul li a:hover, footer div:first-child ul li.selected a {
     color:c;
 }
 footer div:first-child p {
-    color:#CCCCCC;
     display:block;
     font-family:"Arial Black", Gadget, sans-serif;
     font-size:11px;
@@ -56,12 +56,13 @@ footer div:first-child p {
     text-decoration:none;
     text-transform:uppercase;
 }
+
 .connect {
     float:right;
     padding:20px 20px 0;
 }
 .connect span {
-    color:#FFAA33;
+    color:#EA3B3D;
     float:left;
     font-family:"Arial Black", Gadget, sans-serif;
     font-size:11px;
@@ -70,33 +71,32 @@ footer div:first-child p {
 }
 .connect a {
     float:left;
-    height:22px;
     margin:0 0 0 7px;
-    text-indent:-99999px;
-    width:23px;
-}
 
+    height:24px;
+    width:24px;
+}
 .connect a#fb {
-    background:url(../img/icons.png) no-repeat 0 -184px;
+    background:url(../img/connect/facebook-red.svg) ;
+    background-size: 24px 24px;
 }
 .connect a#fb:hover {
-    background:url(../img/icons.png) no-repeat 0 -207px;
+    background:url(../img/connect/facebook-blue.svg) ;
+    background-size: 24px 24px;
 }
-.connect a#twitter {
-    background:url(../img/icons.png) no-repeat 0 -230px;
+.connect a#mail {
+    background:url(../img/connect/mail-red.svg) ;
+    background-size: 24px 24px;
 }
-.connect a#twitter:hover {
-    background:url(../img/icons.png) no-repeat 0 -253px;
+.connect a#mail:hover {
+    background:url(../img/connect/mail-blue.svg) ;
+    background-size: 24px 24px;
 }
-.connect a#googleplus {
-    background:url(../img/icons.png) no-repeat 0 -276px;
+.connect a#yt {
+    background:url(../img/connect/yt-red.svg) ;
+    background-size: 24px;
 }
-.connect a#googleplus:hover {
-    background:url(../img/icons.png) no-repeat 0 -299px;
-}
-.connect a#contact {
-    background:url(../img/icons.png) no-repeat 0 -322px;
-}
-.connect a#contact:hover {
-    background:url(../img/icons.png) no-repeat 0 -345px;
+.connect a#yt:hover {
+    background:url(../img/connect/yt-blue.svg) ;
+    background-size: 24px 24px;
 }

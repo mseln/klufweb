@@ -8,12 +8,15 @@ header {
     width: 80%;
 	max-width: 1000px;
 
-    background: #303030;
+    background: url('../img/bg_div.png') repeat;
+    -moz-box-shadow: 0 0 32px #333;
+    -webkit-box-shadow: 0 0 32px #333;
+    box-shadow: 0 0 32px #666;
 }
 
 header img {
     margin-left: 16px;
-	width: 80%;
+	width: 40%;
 }
 
 header ul {
@@ -45,10 +48,8 @@ header li a {
 
 
     padding: 3px 10px 10px 10px;
-    color: #CCCCCC;
 }
 
 header li a:hover {
     text-decoration: none;
-    color: #FFAA33;
 }
