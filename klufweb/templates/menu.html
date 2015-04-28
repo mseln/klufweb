@@ -7,7 +7,10 @@
     <span class="news">Nyheter</span>
     <ul>
         {% for news in reqcon.articles %}
-        <li><a href="/news/{{news.id}}/{{news.slug}}">{{news.headline}}</a><span>Posted on {{news.created|date:'Y-m-d H:i'}}</span></li>
+        <li>
+            <a href="/news/{{news.id}}/{{news.slug}}">{{news.headline}}</a>
+            <span>Posted on {{news.created|date:'Y-m-d H:i'}}</span>
+        </li>
         {% endfor %}
     </ul>
     <a href="/news">Läs Mer</a>

@@ -7,9 +7,13 @@ from static_page.models import StaticPage
 
 class StaticPageHandler(View):
     template_url = 'static_page/static_page.html'
+    print("HEJ")
 
-    def get(self, request, static_q, *args, **kwargs):
+    def get(self, request, static_q=None, *args, **kwargs):
         reqcon = RequestContext(request)
+        
+        if (static_q == None):
+            static_q = "home";
         try:
             page = StaticPage.objects.get(slug=static_q)
         except:

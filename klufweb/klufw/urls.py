@@ -12,9 +12,9 @@ from static_page.views import StaticPageHandler
 urlpatterns = patterns('',
     (r'^ckeditor/', include('ckeditor.urls')),
 
-    (r'^$', Home.as_view()), 
     (r'^admin/', include(admin.site.urls)), 
 
+    (r'^$', StaticPageHandler.as_view()), 
     (r'^news/$', News.as_view()), 
     (r'^news/p/(?P<page>\d+)/$', News.as_view()), 
     (r'^news/(?P<q_id>\d+)/(?P<slug>[a-z0-9-]+)/$', NewsPage.as_view()), 

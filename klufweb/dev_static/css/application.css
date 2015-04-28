@@ -1,25 +1,34 @@
 html, body {
 	height: 100%;
-    background-color: #3e2f2E;
+    background-color: #392A2A;
+    
+    font-size: 16pt;
     font-family: Garamond, EB Garamond, Georgia, serif;
 }
 
-h1, h2 {
+h1, h2, h3, h4, h5, h6 {
     color:#46BAD3;
-    float:none;
     font-family:gillsans;
-    font-weight:400;
-    line-height:24px;
-    margin:10;
 
-    text-decoration:none;
     text-transform:uppercase;
 }
 h1 {
-    font-size:48px;
+    font-size: 2.5em;
 }
 h2 {
-    margin: 4px;
+    font-size: 2.0em;
+}
+h3 {
+    font-size: 1.7em;
+}
+h4 {
+    font-size: 1.5em;
+}
+h5 {
+    font-size: 1.3em;
+}
+h6 {
+    font-size: 1.2em;
 }
 
 a {

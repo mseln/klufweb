@@ -13,21 +13,17 @@
     display:block;
     font-family:bevanregular;
     font-size:15px;
-    height:47px;
-    line-height:44px;
-    padding:0 0 0 16px;
+
+    padding:4% 8% 4% 8%;
     text-transform:uppercase;
-}
-.sidebar span{
-    font-size:100%;
 }
 .sidebar ul {
     list-style:none;
     margin:0;
-    padding:0 0 1px;
+    padding:0;
 }
 .sidebar ul li{
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.65);
     padding:0 20px;
 }
 .sidebar ul li:hover{
@@ -38,13 +34,11 @@
 
     display:inline-block;
     float:none;
-    font-size:100%;
-    font-weight:700;
-    line-height:18px;
+    font-size:0.75em;
     
     font-family:gillsans;
     text-transform:none;
-    margin:10px 0 1px;
+    margin:4% 0 0% 0;
 }
 .sidebar ul li a:hover {    
     color:#EBE8DE;
@@ -54,12 +48,11 @@
 .sidebar ul li span{
     background:none;
     color:#EA3B3D;
-    line-height:18px;
-    padding:0 0 0 0px;
+    padding:0px;
+
     text-transform:none;
-    height: auto;
     
-    font-size:80%;
+    font-size:0.5em;
     font-family:gillsans;
 }
 .sidebar a{
