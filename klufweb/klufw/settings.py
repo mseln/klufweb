@@ -80,7 +80,21 @@ MEDIA_URL = '/media/'
 CKEDITOR_UPLOAD_PATH = 'ck_uploads/'
 CKEDITOR_IMAGE_BACKEND = 'pillow'
 CKEDITOR_JQUERY_URL = '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'
-
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'Custom',
+        'toolbar_Custom': [
+            ['Bold', 'Italic', 'Underline','Strike','Subscript','Superscript','-','RemoveFormat' ],
+            ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock'],
+            ['Link', 'Unlink','Anchor'],
+            ['Source'],
+            ['Image','Table','HorizontalRule','SpecialChar','PageBreak'],
+            ['Format','FontSize'],
+            ['TextColor','BGColor'],
+            ['Maximize','ShowBlocks','-','About']
+        ]
+    }
+}
 
 
 # Database

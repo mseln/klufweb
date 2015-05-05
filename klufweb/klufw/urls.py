@@ -20,7 +20,7 @@ urlpatterns = patterns('',
     (r'^news/(?P<q_id>\d+)/(?P<slug>[a-z0-9-]+)/$', NewsPage.as_view()), 
 
     # wildcards
-    (r'^(?P<static_q>[a-z0-9-]+)$', StaticPageHandler.as_view()), 
+    (r'^s/(?P<static_q>[a-z0-9-]+)$', StaticPageHandler.as_view()), 
 
 ) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

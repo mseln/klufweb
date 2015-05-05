@@ -1,9 +1,14 @@
 html, body {
-	height: 100%;
-    background-color: #392A2A;
-    
+	height: 100%; 
+    background-color: rgba(0,0,0,0);
+
     font-size: 16pt;
     font-family: Garamond, EB Garamond, Georgia, serif;
+}
+html {
+    background: url("../img/sky.png");
+    background-repeat: no-repeat;
+    background-color: #82CABF;
 }
 
 h1, h2, h3, h4, h5, h6 {
