@@ -42,9 +42,8 @@ INSTALLED_APPS = (
     
     'ckeditor',
 
-    'about',
     'feed',
-    'home',
+    'schedule',
     'static_page',
 )
 
@@ -67,6 +66,7 @@ TEMPLATE_DIRS = (
 )
 TEMPLATE_CONTEXT_PROCESSORS = global_settings.TEMPLATE_CONTEXT_PROCESSORS + (
     'context.context_processors.articles',
+    'context.context_processors.events',
 )
 
 STATIC_ROOT = BASE_DIR + '/static/'

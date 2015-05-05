@@ -18,17 +18,15 @@
 <div class="sidebar">
     <span class="schedule">Träningstider</span>
     <ul>
-        {% for event in SCHEDULE %}
+        {% for event in events %}
             <li>
-                <a href="/schedule">
-                    {{event.weekday}} {{event.time}} 
-                    <br> 
-                    {{event.location}}
-                    <span><i>{% if event.description %} {{event.description}} {%endif%}</i></span>
+                <a href="">
+                    {{event.headline}} <br> 
                 </a>
+                <span>{{event.event_time}}  <br> @ {{event.location}}</span>
                 <span>Updated {{event.updated|date:'Y-m-d '}}</span>
             </li>
         {% endfor %}
     </ul>
-    <a href="/"><!--/schedule"-->Mer Info</a>
+    <a href="/traning">Mer Info</a>
 </div>

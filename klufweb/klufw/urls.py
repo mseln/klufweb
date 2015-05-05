@@ -4,9 +4,8 @@ from django.conf.urls.static import static
 from django.conf import settings
 admin.autodiscover()
 
-from home.views import Home
 from feed.views import News, NewsPage
-from about.views import About
+from schedule.views import Schedule
 from static_page.views import StaticPageHandler
 
 urlpatterns = patterns('',
@@ -15,6 +14,8 @@ urlpatterns = patterns('',
     (r'^admin/', include(admin.site.urls)), 
 
     (r'^$', StaticPageHandler.as_view()), 
+    
+    (r'^traning$', Schedule.as_view()), 
     (r'^news/$', News.as_view()), 
     (r'^news/p/(?P<page>\d+)/$', News.as_view()), 
     (r'^news/(?P<q_id>\d+)/(?P<slug>[a-z0-9-]+)/$', NewsPage.as_view()), 

@@ -1,0 +1,12 @@
+{% extends "base.html"%}
+{% load static %}
+
+
+{% block content %}
+<div class="vanilla">
+    {% for event in events %}
+        <h1>{{ event.headline }}</h1>
+        {{ event.body|safe }}
+    {% endfor %}
+</div>
+{% endblock %}
