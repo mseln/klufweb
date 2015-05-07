@@ -68,3 +68,8 @@
 .sidebar a:hover{
     color:#46BAD3;
 }
+
+.sidebar hr{
+    padding:0;
+    margin:0;
+}

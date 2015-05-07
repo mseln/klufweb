@@ -3,7 +3,7 @@ html, body {
     background-color: rgba(0,0,0,0);
 
     font-size: 16pt;
-    font-family: Garamond, EB Garamond, Georgia, serif;
+    font-family: hind, helvetica;
 }
 html {
     background: url("../img/sky.png");
@@ -94,4 +94,11 @@ a:hover {
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'hind';
+    src: url('../fonts/hind/hind.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
 @import url(http://fonts.googleapis.com/css?family=EB+Garamond);
