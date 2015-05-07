@@ -4,6 +4,7 @@
 
 {% block content %}
 <div class="vanilla">
+    <span>Träningstider</span>
     {% for event in events %}
         <h1>{{ event.headline }}</h1>
         {{ event.body|safe }}

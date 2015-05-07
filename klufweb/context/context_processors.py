@@ -1,6 +1,6 @@
 import os
 from feed.models import NewsArticle
-from schedule.models import Event
+from feed.models import Event
 
 def articles(request):
     articles = NewsArticle.objects.all().order_by('-created')[0:4]

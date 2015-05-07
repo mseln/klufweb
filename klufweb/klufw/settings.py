@@ -43,7 +43,6 @@ INSTALLED_APPS = (
     'ckeditor',
 
     'feed',
-    'schedule',
     'static_page',
 )
 

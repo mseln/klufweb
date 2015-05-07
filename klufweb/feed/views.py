@@ -4,6 +4,7 @@ from django.views.generic import View
 from django.template import RequestContext
 
 from feed.models import NewsArticle
+from feed.models import Event
 
 from feed.templatetags import ext_img
 from django import template
@@ -52,3 +53,13 @@ class NewsPage(View):
 
         context = {'reqcon': reqcon, 'article': article}
         return render(request, self.template_name, context)
+
+
+class Schedule(View):
+    def get(self, request, *args, **kwargs):
+
+        reqcon = RequestContext(request) 
+        events = Event.objects.all().order_by('-created') 
+        context = {'reqcon': reqcon, 'events': events}
+        
+        return render(request, "feed/schedule.html", context)

@@ -38,3 +38,13 @@ class NewsArticle(BaseArticle):
 
 class NewsArticleAdmin(BaseArticleAdmin):
     pass
+
+
+class Event(BaseArticle):
+    location = models.CharField(max_length=50)
+    event_time = models.DateTimeField()
+    pass
+
+class EventAdmin(BaseArticleAdmin):
+    fields = ('headline', 'location', 'event_time', 'body')
+    pass

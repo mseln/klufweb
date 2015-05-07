@@ -5,7 +5,7 @@ from django.conf import settings
 admin.autodiscover()
 
 from feed.views import News, NewsPage
-from schedule.views import Schedule
+from feed.views import Schedule
 from static_page.views import StaticPageHandler
 
 urlpatterns = patterns('',

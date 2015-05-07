@@ -2,6 +2,18 @@
     display: block;
     color: #000000;    
 }
+.news span { 
+    width: 100%;
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 16px;
+
+    padding:4px 16px 4px 16px;
+
+    font-family:bevanregular;
+    font-size:2em;
+    background: #EA3B3D;
+}
 
 .news_item {
     margin-left: auto;

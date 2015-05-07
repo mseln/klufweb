@@ -9,6 +9,7 @@
 
 {% block content %}
 <div class="news">
+    <span>Nyheter</span> 
     {% for article in articles %}
     <div class="news_item">
         <div class="row">
@@ -22,7 +23,8 @@
         </div>
     </div>
     {% endfor %}
-    <div class="row">
+
+<div class="row">
         <div class="col-sm-4">
             {% if page.prev_deactivated %}
                 <a href="#" class="btn btn-primary disabled">Previous</a>
