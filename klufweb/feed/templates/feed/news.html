@@ -21,14 +21,14 @@
                     <a href = "/news/{{article.id}}/{{ article.slug }}">
                         <h2>{{ article.headline }}</h2>
                     </a>
-                    {{ article.body|safe|striptags|truncatewords:"50" }}
+                    {{ article.body|safe|striptags|truncatechars:"100" }}
                 </div>
             {% else %}
                 <div class="col-sm-12">
                     <a href = "/news/{{article.id}}/{{ article.slug }}">
                         <h2>{{ article.headline }}</h2>
                     </a>
-                    {{ article.body|safe|striptags|truncatewords:"50" }}
+                    {{ article.body|safe|striptags|truncatechars:"200" }}
                 </div>
             {% endif %}
         </div>
