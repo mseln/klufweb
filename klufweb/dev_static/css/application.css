@@ -73,6 +73,9 @@ a:hover {
     color: #000000;    
     background: #FFFFFF;
 }
+.vanilla img {
+    margin-bottom: 16px;
+}
 
 
 @font-face {
