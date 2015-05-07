@@ -4,22 +4,33 @@
 {% load ext_img %}
 
 {% block css %}
-<link rel="stylesheet" href="{{ STATIC_URL }}feed/css/news.css">
+<link rel="stylesheet" href="{{ STATIC_URL }}feed/css/feed.css">
 {% endblock css %}
 
 {% block content %}
-<div class="news">
+<div class="feed">
     <span>Nyheter</span> 
     {% for article in articles %}
-    <div class="news_item">
+    <div class="feed_item">
         <div class="row">
-            <div class="col-sm-4">
-                    {{ article.body|ext_img|safe }}
-            </div>
-            <div class="col-sm-8">
-                <a href = "/news/{{article.id}}/{{ article.slug }}"><h2>{{ article.headline }}</h2></a>
+            {% if article.body|ext_img|safe %}
+                <div class="col-sm-4">
+                        {{ article.body|ext_img|safe }}
+                </div>
+                <div class="col-sm-8">
+                    <a href = "/news/{{article.id}}/{{ article.slug }}">
+                        <h2>{{ article.headline }}</h2>
+                    </a>
                     {{ article.body|safe|striptags|truncatewords:"50" }}
-            </div>
+                </div>
+            {% else %}
+                <div class="col-sm-12">
+                    <a href = "/news/{{article.id}}/{{ article.slug }}">
+                        <h2>{{ article.headline }}</h2>
+                    </a>
+                    {{ article.body|safe|striptags|truncatewords:"50" }}
+                </div>
+            {% endif %}
         </div>
     </div>
     {% endfor %}

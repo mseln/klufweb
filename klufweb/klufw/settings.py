@@ -28,7 +28,7 @@ SECRET_KEY = 'development-secret-key-only-to-be-used-in-development!'
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
-ALLOWED_HOSTS = ['10.0.1.5']
+ALLOWED_HOSTS = ['localhost', '10.0.1.5']
 
 
 # Application definition

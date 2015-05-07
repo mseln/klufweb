@@ -1,9 +1,13 @@
 {% extends "base.html"%}
 {% load static %}
 
+{% block css %}
+<link rel="stylesheet" href="{{ STATIC_URL }}feed/css/feed.css">
+{% endblock css %}
+
 
 {% block content %}
-<div class="vanilla">
+<div class="feed">
     <span>Träningstider</span>
     {% for event in events %}
         <h1>{{ event.headline }}</h1>

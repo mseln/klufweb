@@ -28,3 +28,6 @@ urlpatterns = patterns('',
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns += staticfiles_urlpatterns()
+
+handler404 = 'static_page.views.handler404'
+handler500 = 'static_page.views.handler500'

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ STATIC_URL }}static_page/css/static_page.css">
+{% endblock css %}
+
+{% block content %}
+<div class="vanilla">
+    <h1>400!</h1>
+    Känner du dig vilsen? Sidan du försöker hitta finns inte.
+
+    <img src="{% static 'img/404.jpg' %}" width="100%"></img>
+
+    Om du har följt en länk från vår sida, kontakta oss gärna.
+</div>
+{% endblock %}
