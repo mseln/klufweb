@@ -6,9 +6,7 @@ html, body {
     font-family: hind, helvetica;
 }
 html {
-    background: url("../img/sky.png");
-    background-repeat: no-repeat;
-    background-color: #82CABF;
+    background: url("../img/marble.png") repeat, url("../img/bg_grad.png") repeat-x, #5FBAB3;
 }
 
 h1, h2, h3, h4, h5, h6 {
