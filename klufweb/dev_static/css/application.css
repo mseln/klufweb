@@ -9,7 +9,7 @@ html {
     background: url("../img/grass.png"), 
                 url("../img/marble.png"), 
                 url("../img/bg_grad2.png"), 
-                #333333;
+                #333333; 
     background-repeat: repeat-x, repeat, repeat-x;
     background-position: bottom, top, top;
     background-attachment: fixed, fixed, scroll;
